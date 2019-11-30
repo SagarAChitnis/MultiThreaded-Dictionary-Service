@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact name="First:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/DictionaryServer_jar</output-path>
+    <root id="root">
+      <element id="archive" name="First.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/res/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="First" />
+      </element>
+    </root>
+  </artifact>
+</component>
