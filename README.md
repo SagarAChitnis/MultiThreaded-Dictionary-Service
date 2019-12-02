@@ -10,6 +10,16 @@ Multiple clients can access the dictionary service for the following services:
 # Requirements to execute the project
 1. JDK 11.0.3 or above installed in your machine
 
+# Architecture-Server
+The server side is implemented with the multi-threading architecture: thread-per-connection.
+Everytime a new user connects, a new thread is allocated to the user until the user disconnects.
+The dictionary is implemented using the Singleton design pattern to ensure that only one soleInstance of the object
+exits. If multiple dictionary object were created, then it would result to more references to the single dictionary object.
+
+# Client-Side
+The Client side has a UI built using JavaSwing. The client can connect to server on the IP and Portnumber and access
+the services offered in the dictionary.
+
 # Steps to Execute the project
 I. The project can be run from an IDE (IntelliJ/ VSCode/ Ecllipse) of your choice. Follow the below steps
   1. Open the client and server projects on two different windows.
